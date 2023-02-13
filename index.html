@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TS Pig Latin Generator</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>TS Pig Latin Generator</h1>
+    <textarea name="src-text" id="src-text" cols="30" rows="10"></textarea>
+    <textarea
+      name="result-text"
+      id="result-text"
+      cols="30"
+      rows="10"
+    ></textarea>
+    <h3>Info</h3>
+    <p>
+      In case you're not quite sure what Pig Latin is, you could read the
+      wikipedia article on
+      <a href="https://en.wikipedia.org/wiki/Pig_Latin">Pig Latin</a>
+    </p>
+    <h3>Rules</h3>
+    <ul>
+      <li>
+        If a word begins with a <b>vowel</b>, just adds "yay" to the end of it.
+        For example, "out" is translated into "outyay".
+      </li>
+      <li>
+        If it begins with a <b>consonant</b>, then we take all consonants before
+        the first vowel and we put them on the end of the word. For example,
+        "which" is translated into "ichwhay".
+      </li>
+    </ul>
+  </body>
+  <script src="main.js"></script>
+</html>
